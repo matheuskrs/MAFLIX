@@ -36,8 +36,8 @@ main {
 }
 
 .container {
-    width: 100%;
-    text-align: center;
+    min-width: 600px;
+    margin: 0 auto;
 }
 
 .container h1 {
@@ -46,79 +46,94 @@ main {
     letter-spacing: 0.1rem; /* Espaçamento entre as Letras */
 }
 
-ul {
-    list-style: none;       /*  Estilo da Lista */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 2rem 0;
+.container h3 {
+    font-size: 1.5rem;
+    font-weight: normal; 
+    margin: 1rem 0;
+    color: gray;
 }
 
-ul li {
-    width: 180px;
-    margin: 15px;
-    height: 200px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 15px;
+hr {
+    width:100%;
+    margin: 1.5rem 0;
+    border: 1px solid gray;
 }
 
-a {
-    text-decoration: none;
-}
 
-.profile {
+.form-group {
     width: 100%;
-    border-radius: 15px;
-}
-
-.profile img,
-.profile i {
-    width: 100%;
-    height: 170px;
-    border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 7px;
-    border: transparent solid 5px; 
+    justify-content: space-between;
 }
 
-.profile i {
-    font-size: 6rem;
-    color: gray;
+
+.form-group img {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
 }
 
-.profile span {
-    font-size: 20px;
-    color: gray;
-}
-
-.profile:hover img,
-.profile:hover i {
-    background-color: white;
-    border: white solid 5px;
-}
-
-.profile:hover span {
+input[type=text] {
+    border-radius:3px;
+    background-color: gray;
+    border: 1px solid gray;
     color: white;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+    flex: 0.9;
+    cursor: default;
 }
 
-button, .profiles {
-    font-size: 24px;
+::placeholder {
+    color: lightgray;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: lightgray;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    font-size:1.2rem;
+}
+
+input[type=checkbox]{
+    width:1.5rem;
+    height:1.5rem;
+    margin-right:0.4rem;
+}
+
+
+.btn{
+    text-decoration:none;
+    border-radius:5px;
+    font-size: 20px;
     padding: 10px 20px;
-    border: 2px solid gray;
+    border:gray solid 2px;
     color: gray;
-    background-color: black;
+    background-color: inherit;
     cursor: pointer;
 }
 
-button:hover, .profiles:hover{
-    border: 2px solid white;
-    color: white;
+#btnOk{
+    background-color:white;
+    color:black;
+    border:white solid 2px;;
 }
 
+.btn:hover{
+    border: 2px solid white;
+    color:white;
+}
+
+#btnOk:hover{
+    border: 2px solid red;
+    color:white;
+    background-color:red;
+}
 @media (max-width: 530px)
 {
     header {

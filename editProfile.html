@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maflix</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/editProfile.css">
+    <link rel="shortcut icon" href="img/netflixIcon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <h1>Editar Perfil</h1>
+            <hr>
+            <div class="container">
+                <section class="left">    
+                    <div class="left-image">
+                        <img src="img/avatar2.png" alt="Avatar">
+                        <a href="#">
+                            <i class='bx bxs-pencil'></i>
+                        </a>
+                    </div>
+                </section>
+            
+            <div class="right">
+                <input type="text" id="nome" placeholder="Nome" autocomplete="none">
+                <div class="language">
+                    <p>Idioma:</p>
+                    <select name="" id="">
+                        <option value="">Português</option>
+                        <option value="">Inglês</option>
+                        <option value="">Espanhol</option>
+                    </select>
+                </div>
+                
+                <h3>Game ID:</h3>
+                <p class = "explicando">Seu id é um nome exclusivo que será usado ao jogar com outros assinantes na Netflix Games. Saiba mais</p>
+                <form>
+                    <input type="text" id="gameID" placeholder = "Criar Game ID" autocomplete = "none">
+                </form>
+                <hr>
+                <h3>Configurações de classificação etária:</h3>
+                <a href = "#" class = "btn">Todas as Classificações etárias</a>
+                <p class = "titulo">Mostrar títulos de todas as classificações etárias para este perfil.</p>
+                <a href = "#" class = "btn">Editar</a>
+                <hr>
+                <h3>Controles de início automático</h3>
+                <div class="checkbox">
+                        <input type="checkbox" id="automaticI">
+                        <label for="automaticI">Iniciar automaticamente o próximo episódio de uma série em todos os
+                        aparelhos.</label>
+                    </div>
+                <div class="checkbox">
+                        <input type="checkbox" id="automaticR">
+                        <label for="automaticR">Reproduzir automaticamente as prévias ao navegar em todos os aparelhos.</label>
+                  </div>
+                </div>
+            </div>
+            <div class="button">
+                <hr>
+                <a href = "index.html" class = "btn" id = "btnSave">Salvar</a>
+                <a href = "index.html" class = "btn" id = "btnCancel">Cancelar</a>
+                <a href = "#" class = "btn" id = "btnCancel">Excluir Perfil</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html> 
