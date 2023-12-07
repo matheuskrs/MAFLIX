@@ -19,7 +19,7 @@
     <main>
         <form>
             <h1>Editar Perfil</h1>
-            <hr>
+            <hr class = "titleHr">
             <div class="container">
                 <section class="left">    
                     <div class="left-image">
@@ -45,14 +45,14 @@
                 <p class = "explicando">Seu id é um nome exclusivo que será usado ao jogar com outros assinantes na Netflix Games. Saiba mais</p>
                 <form>
                     <input type="text" id="gameID" placeholder = "Criar Game ID" autocomplete = "none">
+                    <hr>
+                    <h3>Configurações de classificação etária:</h3>
+                    <a href = "#" id = "age" class = "btn">Todas as Classificações etárias</a>
+                    <p class = "titulo">Mostrar títulos de todas as classificações etárias para este perfil.</p>
+                    <a href = "#" class = "btn" id = "btnEdit">Editar</a>
+                    <hr>
+                    <h3>Controles de início automático</h3>
                 </form>
-                <hr>
-                <h3>Configurações de classificação etária:</h3>
-                <a href = "#" class = "btn">Todas as Classificações etárias</a>
-                <p class = "titulo">Mostrar títulos de todas as classificações etárias para este perfil.</p>
-                <a href = "#" class = "btn">Editar</a>
-                <hr>
-                <h3>Controles de início automático</h3>
                 <div class="checkbox">
                         <input type="checkbox" id="automaticI">
                         <label for="automaticI">Iniciar automaticamente o próximo episódio de uma série em todos os
@@ -68,7 +68,7 @@
                 <hr>
                 <a href = "index.html" class = "btn" id = "btnSave">Salvar</a>
                 <a href = "index.html" class = "btn" id = "btnCancel">Cancelar</a>
-                <a href = "#" class = "btn" id = "btnCancel">Excluir Perfil</a>
+                <a href = "deleteProfile.html" class = "btn" id = "btnCancel">Excluir Perfil</a>
             </div>
         </form>
     </main>

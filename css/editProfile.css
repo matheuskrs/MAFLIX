@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 
 header {
@@ -28,7 +29,6 @@ html, body {
 }
 
 main {
-
     padding: 3rem;
     flex-wrap: wrap;
 }
@@ -54,37 +54,31 @@ form{
     border-radius:5px;
 }
 .left-image i{
+    box-shadow: 0.1rem 0.1rem 0.9rem rgb(21, 21, 21);
     position:absolute;
     top:80px;
-    border: white 1px solid;
+    border: transparent 1px solid;
     left: 5px;
     font-size:1.3rem;
     padding:0.1rem;
     margin:0;
     border-radius:15px;
     background-color:black;
+    color:gainsboro;
+}
+.left-image i:hover{
+    border: white 1px solid;
     color:white;
-    text-align:left;
 }
 
-.container h1 {
-    font-size: 4rem;        /* Tamanho da Fonte */
-    font-weight: normal;    /* Largura da Fonte */
-    letter-spacing: 0.1rem; /* Espaçamento entre as Letras */
-}
 
 .container h3 {
     font-size: 1.2rem;
     font-weight: normal; 
     margin: 1rem 0;
-    color: rgb(180, 180, 180);
+    color: lightgray;
 }
 
-.form-group img {
-    width: 110px;
-    height: 110px;
-    border-radius: 5px;
-}
 
 input[type=text] {
     border-radius:3px;
@@ -118,11 +112,11 @@ input[type=checkbox]{
 }
 
 .language p{
-    font-size: 1rem;
-    color:gray;
+    font-size: 1.2rem;
+    color:lightgray;
     padding:0;
-    margin:0;
-    margin-top:1rem;
+    margin:0.2rem 0;
+    margin-top: 1rem;
 }
 
 .explicando{
@@ -145,23 +139,30 @@ input[type=checkbox]{
 }
 
 p{
-  margin:1rem;
-  font-size:0.8rem;  
+    margin:1rem;
+    font-size:0.8rem;  
 }
 
 .btn{
     text-decoration:none;
     border-radius:5px;
     font-size: 13px;
-    padding: 5px 20px;
+    padding: 5px 18px;
     border:rgb(47, 47, 47) solid 2px;
-    color: gray;
+    color: lightgray;
     background-color: rgb(47, 47, 47);
     cursor: pointer;
 }
 
+
 #btnCancel{
     background-color:inherit;
+    color:gray;
+}
+
+#btnEdit{
+    background-color:inherit;
+    border-color: gray;
     color:gray;
 }
 
@@ -171,7 +172,7 @@ p{
     border:white solid 2px;;
 }
 
-.btn:hover, #btnCancel:hover{
+.btn:hover, #btnCancel:hover, #btnEdit:hover{
     border: 2px solid white;
     color:white;
 }
@@ -200,7 +201,11 @@ label{
 hr, .button hr{
     max-width:600px;
     margin: 1.5rem auto;
-    border: 1px solid gray;
+    border: 1px solid rgb(81, 81, 81);
+}
+
+.titleHr{
+    margin-top:0;
 }
 
 @media (max-width: 1060px)
